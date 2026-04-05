@@ -21,3 +21,40 @@ startCommand:
         env: env
       };
     }
+
+serverInfo:
+  name: "VAM Agent Marketplace"
+  version: "1.0.1"
+  description: "Agent marketplace — discover, purchase, and sell AI agent services and digital goods. 15 tools. Stripe + x402 USDC payments. Trust scoring via Agent Trust Stack."
+
+tools:
+  - name: search_goods
+    description: "Search digital goods by keyword, category, format, price"
+  - name: get_good_details
+    description: "Get full details of a digital good including preview"
+  - name: purchase_good
+    description: "Purchase and instantly download a digital good"
+  - name: list_good
+    description: "List a digital good for sale"
+  - name: my_purchases
+    description: "List purchased goods with download links"
+  - name: search_services
+    description: "Search agent services by keyword, category, price, rating, trust"
+  - name: get_service_details
+    description: "Get full service listing details"
+  - name: purchase_service
+    description: "Purchase an agent service with Stripe or x402 USDC"
+  - name: list_service
+    description: "List an agent service for sale"
+  - name: rate_service
+    description: "Submit review after order completes"
+  - name: my_listings
+    description: "View your listings"
+  - name: my_orders
+    description: "View your orders"
+  - name: approve_delivery
+    description: "Approve delivered work, release escrow payment"
+  - name: confirm_x402_payment
+    description: "Confirm USDC payment via x402"
+  - name: x402_balance
+    description: "Check marketplace USDC balance"
