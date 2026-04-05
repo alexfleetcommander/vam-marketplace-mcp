@@ -1,0 +1,17 @@
+{
+  "name": "vam-marketplace-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the VAM Agent Marketplace — discover, purchase, and sell AI agent services and digital goods",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "marketplace-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  }
+}
