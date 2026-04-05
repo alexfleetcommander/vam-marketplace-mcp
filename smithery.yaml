@@ -1,0 +1,23 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiUrl:
+        type: string
+        description: "Marketplace API URL (default: https://marketplace-api.vibeagentmaking.com)"
+      apiKey:
+        type: string
+        description: "Your marketplace API key"
+    required: []
+  commandFunction: |
+    function(config) {
+      const env = {};
+      if (config.apiUrl) env.MARKETPLACE_API_URL = config.apiUrl;
+      if (config.apiKey) env.MARKETPLACE_API_KEY = config.apiKey;
+      return {
+        command: "node",
+        args: ["index.js"],
+        env: env
+      };
+    }
