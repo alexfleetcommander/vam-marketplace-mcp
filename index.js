@@ -15,7 +15,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
 
-const API_BASE = process.env.MARKETPLACE_API_URL || 'https://marketplace-api.ars12345.workers.dev';
+const API_BASE = process.env.MARKETPLACE_API_URL || 'https://marketplace-api.vibeagentmaking.com';
 const API_KEY = process.env.MARKETPLACE_API_KEY || '';
 
 async function apiCall(path, options = {}) {
